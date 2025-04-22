@@ -3,45 +3,60 @@ mvnw
 mvnw.cmd
 .mvn/
 
-# Arquivos de compilação do Gradle
-.gradle/
-build/
+# Miscellaneous
+*.java.hsp
+*.sonarj
+*.sw*
+.DS_Store
+build.sh
+integration-repo
+ivy-cache
+argfile*
+activemq-data/
+classes/
 
-# Arquivos de configuração do IntelliJ IDEA
-.idea/
+# Log files
+jxl.log
+jmx.log
+derby.log
 
-# Arquivos de configuração do Eclipse
+# Gradle artifacts
+.gradle
+.gradletasknamecache
+/build
+buildSrc/build
+/spring-*/build
+/framework-*/build
+/integration-tests/build
+/src/asciidoc/build
+spring-test/test-output/
+
+# Maven artifacts
+pom.xml
+/target/
+
+# Eclipse artifacts, including WTP generated manifests
+bin
 .classpath
 .project
-.settings/
+.settings
+.springBeans
+spring-*/src/main/java/META-INF/MANIFEST.MF
 
-# Arquivos de configuração do VSCode
+# IDEA artifacts and output dirs
+*.iml
+*.ipr
+*.iws
+.idea/*
+!.idea/icon.svg
+out
+test-output
+atlassian-ide-plugin.xml
+
+# VS Code
 .vscode/
 
-# Logs e arquivos temporários
-*.log
-*.tmp
-*.temp
+cached-antora-playbook.yml
 
-# Arquivos de dependências
-lib/
-bin/
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Arquivos de build do React
-/build/
-.DS_Store
-
-# Arquivos de configuração do React
-/.env.local
-/.env.development.local
-/.env.test.local
-/.env.production.local
-
-# Outros arquivos e diretórios
-.idea
-.vscode
-.DS_Store
+node_modules
+/.kotlin/
